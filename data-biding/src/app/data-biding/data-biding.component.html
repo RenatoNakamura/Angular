@@ -1,0 +1,18 @@
+<section class="property-biding">
+  <article>
+    <h3>
+      Interpolacion / Interpolação
+    </h3>
+    <p>String renderizada com Interpolação: {{ url }}</p>
+    <p>A soma de 1 + 1 é: {{ 1 + 1 }}</p>
+    <p>A soma de 1 + 1 não é: {{ 1 + 1 + getValor() }}</p>
+    <p>Curso de Angular e gosto do curso: {{ cursoAngular && getCurtirCurso() }}</p>
+  </article>
+
+  <article>
+    <h3>Property biding</h3>
+    <img src="{{ urlImage }}">
+    <img [src]="urlImage">
+    <img bind-src="urlImage">
+  </article>
+</section>
